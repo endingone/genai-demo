@@ -1,67 +1,55 @@
-![image](https://user-images.githubusercontent.com/113465005/226238596-cc76039e-67c2-46b6-b0bb-35d037ae66e1.png)
+# Azure OpenAI Workbench powered by: Azure AI Search + Azure OpenAI + Bot Framework + Langchain + CosmosDB + Document Intelligence SDK
 
-# 3 or 5 days POC VBD powered by: Azure AI Search + Azure OpenAI + Bot Framework + Langchain + Azure SQL + CosmosDB + Bing Search API + Document Intelligence SDK
+<span style="color:red">*※ The below need to be udated.*</span><br>
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/MSUSAzureAccelerators/Azure-Cognitive-Search-Azure-OpenAI-Accelerator?quickstart=1)
 [![Open in VS Code Dev Containers](https://img.shields.io/static/v1?style=for-the-badge&label=Remote%20-%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/MSUSAzureAccelerators/Azure-Cognitive-Search-Azure-OpenAI-Accelerator)
 
 Your organization requires a Multi-Channel Smart Chatbot and a search engine capable of comprehending diverse types of data scattered across various locations. Additionally, the conversational chatbot should be able to provide answers to inquiries, along with the source and an explanation of how and where the answer was obtained. In other words, you want **private and secured ChatGPT for your organization that can interpret, comprehend, and answer questions about your business data**.
 
-The goal of the POC is to show/prove the value of a GPT Virtual Assistant built with Azure Services, with your own data in your own environment. The deliverables are:
+The goal of the Workbench is to provide the instruction for building a use-case quickly and show/prove the value of a use-case built with Azure Services, with your own data in your own environment. The deliverables are:
 
 1. Backend Bot API built with Bot Framework and exposed to multiple channels (Web Chat, MS Teams, SMS, Email, Slack, etc)
 2. Frontend web application with a Search and a Bot UI.
 
-The repo is made to teach you step-by-step on how to build a OpenAI-based Smart Search Engine. Each Notebook builds on top of each other and ends in building the two applications.
-
-**For Microsoft FTEs:** This is a customer funded VBD, below the assets for the delivery.
-
-| **Item**                   | **Description**                                                                                                     | **Link**                                                                                                                                                |
-|----------------------------|---------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| VBD SKU Info and Datasheet                   | CSAM must dispatch it as "Customer Invested" against credits/hours of Unified Support Contract. Customer decides if 3 or 5 days.                                      | [ESXP SKU page](https://esxp.microsoft.com/#/omexplanding/services/14486/geo/USA/details/1)                                                                                              |
-| VBD Accreditation for CSAs     | Links for CSAs to get the Accreditation needed to deliver the workshop                                                                      | [Link 1](https://learningplayer.microsoft.com/activity/s9261799/launch) , [Link 2](https://learningplayer.microsoft.com/activity/s9264662/launch) |
-| VBD 3-5 day POC Asset (IP)  | The MVP to be delivered  (this GitHub repo)                                     | [Azure-Cognitive-Search-Azure-OpenAI-Accelerator](https://github.com/MSUSAzureAccelerators/Azure-Cognitive-Search-Azure-OpenAI-Accelerator)                |
-| VBD Workshop Deck          | The deck introducing and explaining the workshop                                                                    | [Intro AOAI GPT Azure Smart Search Engine Accelerator.pptx](https://github.com/MSUSAzureAccelerators/Azure-Cognitive-Search-Azure-OpenAI-Accelerator/blob/main/Intro%20AOAI%20GPT%20Azure%20Smart%20Search%20Engine%20Accelerator.pptx) |
-| CSA Training Video         | 2 Hour Training for Microsoft CSA's                                                                    | [POC VBD Training Recording](https://microsoft.sharepoint.com/teams/CSUDataAI/_layouts/15/stream.aspx?id=%2Fteams%2FCSUDataAI%2FShared%20Documents%2FTech%20Talk%2FAI%20%26%20ML%2FAOAI%203%2DDay%20Workshop%20Training%2FAzure%20OpenAI%20%5F%20VBD%20Delivery%20Training%20%5F%20Option%201%2D20230607%5F090249%2DMeeting%20Recording%20%281%29%2Emp4&referrer=Teams%2ETEAMS%2DELECTRON&referrerScenario=p2p%5Fns%2Dbim&ga=1) |
-
+The repo is made to teach you step-by-step on how to build a <span style="color:red">OpenAI-based Smart Search Engine.</span> Each Notebook builds on top of each other and ends in building the two applications.
 
 ---
-**Prerequisites Client 3-5 Days POC**
+**Prerequisites Client 2 Weeks POC**
 * Azure subscription
-* Accepted Application to Azure Open AI, including GPT-4. If customer does not have GPT-4 approved, Microsoft CSAs can lend theirs during the workshop
-* Microsoft members preferably to be added as Guests in clients Azure AD. If not possible, then customers can issue corporate IDs to Microsoft members
-* A Resource Group (RG)  needs to be set for this Workshop POC, in the customer Azure tenant
-* The customer team and the Microsoft team must have Contributor permissions to this resource group so they can set everything up 2 weeks prior to the workshop
+* Accepted Application to Azure Open AI, including GPT-4. <span style="color:red">If customer does not have GPT-4 approved, SK C&C can lend theirs during the workshop</span>
+* SK C&C members preferably to be added as Guests in clients Azure AD. If not possible, then customers can issue corporate IDs to SK C&C members
+* A Resource Group (RG)  needs to be set for <span style="color:red">this Workshop POC</span>, in the customer Azure tenant
+* The customer team and the SK C&C team must have Contributor permissions to this resource group so they can set everything up 5 weeks prior to <span style="color:red">the workshop</span>
 * A storage account must be set in place in the RG.
-* Customer Data/Documents must be uploaded to the blob storage account, at least two weeks prior to the workshop date
+* Customer Data/Documents must be uploaded to the blob storage account, at least two weeks prior to <span style="color:red">the workshop date</span>
 * A Multi-Tenant App Registration (Service Principal) must be created by the customer (save the Client Id and Secret Value).
-* Customer must provide the Microsoft Team , 10-20 questions (easy to hard) that they want the bot to respond correctly.
-* For IDE collaboration and standarization during workshop, AML compute instances with Jupyper Lab will be used, for this, Azure Machine Learning Workspace must be deployed in the RG
+* Customer must provide the SK C&C Team , 10-20 questions (easy to hard) that they want the bot to respond correctly.
+* For IDE collaboration and standarization during <span style="color:red">workshop</span>, AML compute instances with Jupyper Lab will be used, for this, Azure Machine Learning Workspace must be deployed in the RG
    * Note: Please ensure you have enough core compute quota in your Azure Machine Learning workspace 
 
 ---
 # Architecture 
+<span style="color:red">*※ The below need to be udated.*</span><br>
 ![Architecture](./images/GPT-Smart-Search-Architecture.jpg "Architecture")
 
 ## Flow
 1. The user asks a question.
 2. In the app, an OpenAI GPT-4 LLM uses a clever prompt to determine which source to use based on the user input
 3. Five types of sources are available:
-   * 3a. Azure SQL Database - contains COVID-related statistics in the US.
-   * 3b. API Endpoints - RESTful OpenAPI 3.0 API containing up-to-date statistics about Covid.
-   * 3c. Azure Bing Search API - provides access to the internet allowing scenerios like: QnA on public websites .
-   * 3d. Azure AI Search - contains AI-enriched documents from Blob Storage:
-       - 10,000 Arxiv Computer Science PDFs  
-       - 90,000 Covid publication abstracts
-       - 5 lenghty PDF books
-   * 3f. CSV Tabular File - contains COVID-related statistics in the US.
-   * 3g. Kraken broker API for currencies
+   * 3a. Azure AI Search - contains AI-enriched documents from Blob Storage:
+       - 11 Employee Handbook of Contoso Electronics PDF
+       - 4 Plan and Benefit Packages of Contoso Electronics PDF
+       - 109 Northwind Health Plus Plan PDF
+       - 104 Northwind Health Standard Plan
+       - 4 PerksPlus Health and Wellness Reimbursement Program for Contoso Electronics Employees PDF
+       - 31 Roles Descriptions at Contoso Electronics PDF
 4. The app retrieves the result from the source and crafts the answer.
 5. The tuple (Question and Answer) is saved to CosmosDB as persistent memory and for further analysis.
 6. The answer is delivered to the user.
 
 ---
 ## Demo
-
+<span style="color:red">*※ The below need to be udated.*</span><br>
 https://gptsmartsearchapp.azurewebsites.net/
 
 
@@ -71,15 +59,12 @@ https://gptsmartsearchapp.azurewebsites.net/
 
    - Uses [Bot Framework](https://dev.botframework.com/) and [Bot Service](https://azure.microsoft.com/en-us/products/bot-services/) to Host the Bot API Backend and to expose it to multiple channels including MS Teams.
    - 100% Python.
-   - Uses [Azure Cognitive Services](https://azure.microsoft.com/en-us/products/cognitive-services/) to index and enrich unstructured documents: OCR over images, Chunking and automated vectorization.
+   - Uses [Azure AI Services](https://azure.microsoft.com/en-us/products/cognitive-services/) to index and enrich unstructured documents: OCR over images, Chunking and automated vectorization.
    - Uses Hybrid Search Capabilities of Azure AI Search to provide the best semantic answer (Text and Vector search combined).
    - Uses [LangChain](https://langchain.readthedocs.io/en/latest/) as a wrapper for interacting with Azure OpenAI , vector stores, constructing prompts and creating agents.
    - Multi-Lingual (ingests, indexes and understand any language)
    - Multi-Index -> multiple search indexes
-   - Tabular Data Q&A with CSV files and SQL flavor Databases
    - Uses [Azure AI Document Intelligence SDK (former Form Recognizer)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-3.0.0) to parse complex/large PDF documents
-   - Uses [Bing Search API](https://www.microsoft.com/en-us/bing/apis) to power internet searches and Q&A over public websites.
-   - Connects to API Data sources by converting natural language questions to API calls.
    - Uses CosmosDB as persistent memory to save user's conversations.
    - Uses [Streamlit](https://streamlit.io/) to build the Frontend web application in python.
    
@@ -96,8 +81,9 @@ Note: (Pre-requisite) You need to have an Azure OpenAI service already created
    - "gpt-4-turbo-1106  (or newer)"
    - "text-embedding-ada-002 (or newer)"
 3. Create a Resource Group where all the assets of this accelerator are going to be. Azure OpenAI can be in different RG or a different Subscription.
-4. ClICK BELOW to create all the Azure Infrastructure needed to run the Notebooks (Azure AI Search, Cognitive Services, etc):
+4. ClICK BELOW to create all the Azure Infrastructure needed to run the Notebooks (Azure AI Search, Azure AI Services, etc):
 
+<span style="color:red">*※ The below need to be udated.*</span><br>
 [![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fpablomarin%2FGPT-Azure-Search-Engine%2Fmain%2Fazuredeploy.json) 
 
 **Note**: If you have never created a `Azure AI Services Multi-Service account` before, please create one manually in the azure portal to read and accept the Responsible AI terms. Once this is deployed, delete this and then use the above deployment button.
@@ -160,7 +146,7 @@ git clone git@github.com:YOUR-USERNAME/YOUR-REPOSITORY.git
 </details>
 
 ## Contributing
-
+<span style="color:red">*※ The below need to be udated.*</span><br>
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
 the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
@@ -174,7 +160,7 @@ For more information see the [Code of Conduct FAQ](https://opensource.microsoft.
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
 ## Trademarks
-
+<span style="color:red">*※ The below need to be udated.*</span><br>
 This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft 
 trademarks or logos is subject to and must follow 
 [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).

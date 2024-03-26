@@ -51,7 +51,7 @@ For example:
 
 coli1, coli2= st.columns([3,1])
 with coli1:
-    query = st.text_input("Ask a question to your enterprise data lake", value= "What are the main risk factors for Covid-19?", on_change=clear_submit)
+    query = st.text_input("Ask a question to your enterprise data lake", value= "What is Contoso Electronics's mission?", on_change=clear_submit)
 
 button = st.button('Search')
 
