@@ -30,7 +30,7 @@ The repo is made to teach you step-by-step on how to build a <span style="color:
 ---
 # Architecture 
 <span style="color:red">*※ The below need to be udated.*</span><br>
-![Architecture](./images/GPT-Smart-Search-Architecture.jpg "Architecture")
+![Architecture](./images/GPT-Smart-Search-Architecture2.jpg "Architecture")
 
 ## Flow
 1. The user asks a question.
