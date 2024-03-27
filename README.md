@@ -50,7 +50,7 @@ The repo is made to teach you step-by-step on how to build a <span style="color:
 ---
 ## Demo
 <span style="color:red">*※ The below need to be udated.*</span><br>
-https://gptsmartsearchapp.azurewebsites.net/
+https://webapp-frontend-2znp775rdhyvo.azurewebsites.net/
 
 
 ---
