@@ -28,16 +28,6 @@ with st.sidebar:
 - 책에 대한 지식을 검색 - 3 PDF books (***use @booksearch in your question***)
 
 참고: @로 시작하는 도구 이름을 사용하지 않으면 봇이 자체 지식이나 사용 가능한 도구를 사용하여 질문에 답변하려고 시도합니다.
-
-
-질문 예시.
-
-- Hello, my name is Bob, what's yours?
-- @chatgpt, How do I cook a chocolate cake?
-- @booksearch, what normally rich dad do that is different from poor dad?
-- @docsearch, Why Covid doesn't affect kids that much compared to adults?
-- @docsearch, List the authors that talk about Boosting Algorithms
-- Please tell me a joke
     """)
     
 st.markdown("""
