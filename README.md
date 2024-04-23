@@ -1,13 +1,13 @@
 # Azure OpenAI Workbench powered by: Azure AI Search + Azure OpenAI + Bot Framework + Langchain + CosmosDB + Document Intelligence SDK
 
-Your organization requires a Multi-Channel Smart Chatbot and a search engine capable of comprehending diverse types of data scattered across various locations. Additionally, the conversational chatbot should be able to provide answers to inquiries, along with the source and an explanation of how and where the answer was obtained. In other words, you want **private and secured ChatGPT for your organization that can interpret, comprehend, and answer questions about your business data**.
+조직에는 여러 위치에 흩어져 있는 다양한 유형의 데이터를 이해할 수 있는 멀티 채널 스마트 챗봇과 검색 엔진이 필요합니다. 또한 대화형 챗봇은 문의에 대한 답변과 함께 출처 및 답변을 얻은 방법과 출처에 대한 설명도 제공할 수 있어야 합니다. In other words, you want **private and secured ChatGPT for your organization that can interpret, comprehend, and answer questions about your business data**.
 
-The goal of the Workbench is to provide the instruction for building a use-case quickly and show/prove the value of a use-case built with Azure Services, with your own data in your own environment. The deliverables are:
+워크벤치의 목표는 사용 사례를 신속하게 빌드하기 위한 지침을 제공하고 자체 환경에서 자체 데이터를 사용하여 Azure 서비스로 빌드한 사용 사례의 가치를 보여 주거나 증명하는 것입니다. 결과물은 다음과 같습니다.
 
-1. Backend Bot API built with Bot Framework and exposed to multiple channels (Web Chat, MS Teams, SMS, Email, Slack, etc)
+1. Bot Framework로 구성된 여러 채널에 노출되는 Backend Bot API (Web Chat, MS Teams, SMS, Email, Slack, etc)
 2. Frontend web application with a Search and a Bot UI.
 
-The repo is made to teach you step-by-step on how to build a <span style="color:red">OpenAI-based Smart Search Engine.</span> Each Notebook builds on top of each other and ends in building the two applications.
+이 리포지토리는 <span style="color:red">OpenAI 기반 스마트 검색 엔진</span>을 구축하는 방법을 단계별로 알려드리기 위해 만들어졌습니다. 각 노트북은 서로를 기반으로 구축되며 두 애플리케이션을 구축하는 것으로 끝납니다.
 
 ---
 **Prerequisites Client 2 Weeks POC**
@@ -29,8 +29,8 @@ The repo is made to teach you step-by-step on how to build a <span style="color:
 ![Architecture](./images/GPT-Smart-Search-Architecture2.jpg "Architecture")
 
 ## Flow
-1. The user asks a question.
-2. In the app, an OpenAI GPT-4 LLM uses a clever prompt to determine which source to use based on the user input
+1. 사용자가 질의를 합니다.
+2. App에서 OpenAI GPT-4 LLM은 사용자 입력에 따라 사용할 소스를 결정하기 위해 Smart 프롬프트를 사용합니다.
 3. Five types of sources are available:
    * 3a. Azure AI Search - contains AI-enriched documents from Blob Storage:
        - 11 Employee Handbook of Contoso Electronics PDF
@@ -39,9 +39,9 @@ The repo is made to teach you step-by-step on how to build a <span style="color:
        - 104 Northwind Health Standard Plan
        - 4 PerksPlus Health and Wellness Reimbursement Program for Contoso Electronics Employees PDF
        - 31 Roles Descriptions at Contoso Electronics PDF
-4. The app retrieves the result from the source and crafts the answer.
-5. The tuple (Question and Answer) is saved to CosmosDB as persistent memory and for further analysis.
-6. The answer is delivered to the user.
+4. App은 소스로부터 결과를 검색하여 답을 작성합니다.
+5. 튜플(질문과 답변)은 추가 분석을 위해 Cosmos DB에 영구 메모리로 저장됩니다.
+6. 답변이 사용자에게 전달됩니다. 
 
 ---
 ## Demo
