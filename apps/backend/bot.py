@@ -59,11 +59,13 @@ class BotServiceCallbackHandler(BaseCallbackHandler):
         await self.tc.send_activity(Activity(type=ActivityTypes.typing))
 
             
+            
 # Bot Class
 class MyBot(ActivityHandler):
     
     def __init__(self):
         self.model_name = os.environ.get("AZURE_OPENAI_MODEL_NAME") 
+        #self.model_name = os.environ.get("GPT4_DEPLOYMENT_NAME")
         
     def get_session_history(self, session_id: str, user_id: str) -> CosmosDBChatMessageHistory:
         cosmos = CosmosDBChatMessageHistory(
@@ -107,7 +109,7 @@ class MyBot(ActivityHandler):
 
         # Set LLM 
         llm = AzureChatOpenAI(deployment_name=self.model_name, temperature=0.5, 
-                              max_tokens=1500, callback_manager=cb_manager, streaming=True)
+                              max_tokens=1800, callback_manager=cb_manager, streaming=True)
 
         # Initialize our Tools/Experts
         doc_indexes = ["cogsrch-index-files"]

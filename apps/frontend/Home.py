@@ -1,18 +1,19 @@
 import streamlit as st
 
-st.header("Azure OpenAI Workbench - Web Frontend")
+st.header("Generative AI Chatbot (SK C&C)")
 
 st.markdown("---")
 st.markdown("""
-    This engine finds information from the following:
-    - 6 PDFs : "Benefit_Options.pdf", "employee_handbook.pdf", "Northwind_Health_Plus_Benefits_Details.pdf", "Northwind_Standard_Benefits_Details.pdf", "PerksPlus.pdf", "role_library.pdf"
-    - 5 Books: "Azure_Cognitive_Search_Documentation.pdf", "Boundaries_When_to_Say_Yes_How_to_Say_No_to_Take_Control_of_Your_Life.pdf", "Fundamentals_of_Physics_Textbook.pdf", "Made_To_Stick.pdf", "Pere_Riche_Pere_Pauvre.pdf" (French version of Rich Dad Poor Dad).
     
-    **👈 Select a demo from the sidebar** to see an example of a Search Interface, and a Bot Interface.
+    안녕하세요! 검색 서비스와 챗 서비스를 제공하는 AI Chatgot 입니다. 
 
-    ### Want to learn more?
-    - Check out [Github Repo](https://github.com/endingone/Azure-AI-Search-Azure-OpenAI-Workbench)
-    - Jump into [Azure OpenAI documentation](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/)
+    이 엔진은 미리 업로드한 PDF 파일에서 정보를 찾아냅니다.
+
+    소스의 위치는 [Github Repo](https://github.com/endingone/Azure-AI-Search-Azure-OpenAI-Workbench) 입니다. 
+    
+    **👈
+    문서 검색을 이용하려면 'Search'를, 대화형 기반의 챗 서비스를 이용하려면 'WebChat'을 선택하세요! 
+
 
 """
 )

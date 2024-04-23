@@ -18,31 +18,25 @@ with st.sidebar:
     st.markdown("""# Instructions""")
     st.markdown("""
 
-This Chatbot is hosted in an independent Backend Azure Web App and was created using the Bot Framework SDK.
-The Bot Interface is just a window to a Bot Service app hosted in Azure.
+이 Chatbot은 독립적인 Backend Azure Web App에서 호스팅되며 봇 프레임워크 SDK를 사용하여 만들어졌습니다.
+(봇 인터페이스는 Azure에서 호스팅되는 Bot Service 앱의 창일 뿐입니다.)
 
-It has access to the following tools/pluggins:
+다음의 도구/플러그인을 이용할 수 있습니다.
 
-- Bing Search (***use @bing in your question***)
-- ChatGPT for common knowledge (***use @chatgpt in your question***)
-- Azure SQL for covid statistics data (***use @sqlsearch in your question***)
-- Azure Search for documents knowledge - Arxiv papers and Covid Articles (***use @docsearch in your question***)
-- Azure Search for books knowledge - 5 PDF books (***use @booksearch in your question***)
-- API Search for real-time covid statistics for US States, Countries and Continents (***use @apisearch in your question***)
+- 일반적인 지식을 위한 ChatGPT (***use @chatgpt in your question***)
+- Azure 특정 서비스 문서의 지식 검색 - Azure Storage Account (***use @docsearch in your question***)
+- 책에 대한 지식을 검색 - 3 PDF books (***use @booksearch in your question***)
 
-Note: If you don't use any of the tool names beginning with @, the bot will try to use it's own knowledge or tool available to answer the question.
+참고: @로 시작하는 도구 이름을 사용하지 않으면 봇이 자체 지식이나 사용 가능한 도구를 사용하여 질문에 답변하려고 시도합니다.
 
-Example questions:
+
+질문 예시.
 
 - Hello, my name is Bob, what's yours?
-- @bing, What's the main economic news of today?
 - @chatgpt, How do I cook a chocolate cake?
 - @booksearch, what normally rich dad do that is different from poor dad?
 - @docsearch, Why Covid doesn't affect kids that much compared to adults?
-- @apisearch, What is the state with most covid deaths in USA?
-- @sqlsearch, How many people where hospitalized in Arkansas in June 2020?
 - @docsearch, List the authors that talk about Boosting Algorithms
-- @bing, what movies are showing tonight in Seattle?
 - Please tell me a joke
     """)
     
@@ -91,7 +85,7 @@ f"""
     </style>
   </head>
   <body>
-    <h1><img src='https://logos-world.net/wp-content/uploads/2021/02/Microsoft-Azure-Emblem.png' height="40">Bot Service + Azure OpenAI</h1> 
+    <h1><img src='https://blobstorageo4edtammb3b6o.blob.core.windows.net/icon/SK Logo.png' height="40">Smart ChatBot Demo</h1> 
     <div id="webchat" role="main"></div>
     <script>
       // Set  the CSS rules.
