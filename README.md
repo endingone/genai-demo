@@ -1,4 +1,4 @@
-# Azure OpenAI Workbench powered by: Azure AI Search + Azure OpenAI + Bot Framework + Langchain + CosmosDB + Document Intelligence SDK
+# Generative AI Chatbot Demo by: Azure AI Search + Azure OpenAI + Bot Framework + Langchain + CosmosDB + Document Intelligence SDK
 
 조직에는 여러 위치에 흩어져 있는 다양한 유형의 데이터를 이해할 수 있는 멀티 채널 스마트 챗봇과 검색 엔진이 필요합니다. 또한 대화형 챗봇은 문의에 대한 답변과 함께 출처 및 답변을 얻은 방법과 출처에 대한 설명도 제공할 수 있어야 합니다. 즉, 비즈니스 데이터에 대한 질문을 해석하고, 이해하고, 답변할 수 있는 **프라이빗하고 안전한 ChatGPT**를 조직에 제공하고자 하는 것입니다. 
 
