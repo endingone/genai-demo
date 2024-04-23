@@ -23,9 +23,9 @@ with st.sidebar:
 
 다음의 도구/플러그인을 이용할 수 있습니다.
 
-- 일반적인 지식을 위한 ChatGPT (***use @chatgpt in your question***)
-- Azure 특정 서비스 문서의 지식 검색 - Azure Storage Account (***use @docsearch in your question***)
-- 책에 대한 지식을 검색 - 3 PDF books (***use @booksearch in your question***)
+- 일반적인 지식을 위한 ChatGPT (***질문에 @chatgpt 를 사용하세요***)
+- Azure 특정 서비스 문서의 지식 검색 - Azure OpenAI, AI Studio (***질문에 @docsearch 를 사용하세요***)
+- 책에 대한 지식을 검색 - 3 PDF books (***질문에 @booksearch 를 사용하세요***)
 
 참고: @로 시작하는 도구 이름을 사용하지 않으면 봇이 자체 지식이나 사용 가능한 도구를 사용하여 질문에 답변하려고 시도합니다.
     """)
