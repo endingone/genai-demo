@@ -34,19 +34,12 @@ def clear_submit():
 with st.sidebar:
     st.markdown("""# Instructions""")
     st.markdown("""
-Ask a question that you think can be answered with the information in about 10k Arxiv Computer Science publications from 2020-2021 or in 90k Medical Covid-19 Publications.
+Azure AI Service(OpenAI, AI Studio)에 대해 궁금한 것을 검색하세요. 
 
 For example:
-- What are markov chains?
-- List the authors that talk about Boosting Algorithms
-- How does random forest work?
-- What kind of problems can I solve with reinforcement learning? Give me some real life examples
-- What kind of problems Turing Machines solve?
-- What are the main risk factors for Covid-19?
-- What medicine reduces inflammation in the lungs?
-- Why Covid doesn't affect kids that much compared to adults?
+- Azure OpenAI 의 최신 기능을 알려줘. 
     
-    \nYou will notice that the answers to these questions are diferent from the open ChatGPT, since these papers are the only possible context. This search engine does not look at the open internet to answer these questions. If the context doesn't contain information, the engine will respond: I don't know.
+    \nData Source(Docs PDF)에서 찾은 검색 결과를 기반으로 답변하기 때문에 공개적인 ChatGPT와 다르다는 것을 알 수 있습니다. 
     """)
 
 coli1, coli2= st.columns([3,1])
