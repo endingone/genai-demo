@@ -1,6 +1,6 @@
 # Azure OpenAI Workbench powered by: Azure AI Search + Azure OpenAI + Bot Framework + Langchain + CosmosDB + Document Intelligence SDK
 
-조직에는 여러 위치에 흩어져 있는 다양한 유형의 데이터를 이해할 수 있는 멀티 채널 스마트 챗봇과 검색 엔진이 필요합니다. 또한 대화형 챗봇은 문의에 대한 답변과 함께 출처 및 답변을 얻은 방법과 출처에 대한 설명도 제공할 수 있어야 합니다. In other words, you want **private and secured ChatGPT for your organization that can interpret, comprehend, and answer questions about your business data**.
+조직에는 여러 위치에 흩어져 있는 다양한 유형의 데이터를 이해할 수 있는 멀티 채널 스마트 챗봇과 검색 엔진이 필요합니다. 또한 대화형 챗봇은 문의에 대한 답변과 함께 출처 및 답변을 얻은 방법과 출처에 대한 설명도 제공할 수 있어야 합니다. 즉, 비즈니스 데이터에 대한 질문을 해석하고, 이해하고, 답변할 수 있는 **프라이빗하고 안전한 ChatGPT**를 조직에 제공하고자 하는 것입니다. 
 
 워크벤치의 목표는 사용 사례를 신속하게 빌드하기 위한 지침을 제공하고 자체 환경에서 자체 데이터를 사용하여 Azure 서비스로 빌드한 사용 사례의 가치를 보여 주거나 증명하는 것입니다. 결과물은 다음과 같습니다.
 
